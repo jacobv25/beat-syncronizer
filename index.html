@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Visualizer</title>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="audio-visualizer.js"></script> <!-- This is your JavaScript file -->
+</head>
+<body>
+    <div id="waveform"></div>
+    <button id="playButton">Play</button>
+    <button id="pauseButton">Pause</button>
+    <button id="stopButton">Stop</button>
+    <div id="timer">0:00</div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        initAudio('Free_Test_Data_1MB_MP3.mp3');
+    });
+    </script>
+</body>
+</html>
